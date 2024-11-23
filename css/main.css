@@ -23,6 +23,41 @@ header{
     padding: 10px;
 }
 
+header .caixa{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1300px;
+    margin: auto;
+}
+
+header .caixa button{
+    position: relative;
+    left: -10px;
+    background-color: #13b413;
+    font-size: 15px;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+    animation: cor 1s infinite alternate;
+    transition: .5s ease;
+}
+
+header .caixa button:hover{
+    background-color: #0e850e;
+    transform: scale(1.09);
+}
+
+@keyframes cor {
+    0%{
+        box-shadow: 0px 0px 1px rgb(0, 255, 0);
+    } 100%{
+        box-shadow: 0px 0px 5px rgb(0, 255, 0);
+    }
+}
+
 header img{
     border-radius: 50%;
     width: 70px;
@@ -84,4 +119,8 @@ section{
     border-radius: 10px;
     border:2px solid black;
     width: 500px;
+}
+
+ol{
+    margin-left: 20px;
 }
